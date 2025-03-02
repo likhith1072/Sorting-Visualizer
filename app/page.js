@@ -27,19 +27,19 @@ export default function Home() {
         <h1 className="text-7xl font-bold text-center text-transparent
          bg-[url('fire.gif')] bg-clip-text"> SORTING VISUALIZER</h1>
         <div className="h-[80vh] w-[80vw] bg-gray-300 mx-auto">
-          <div className='bg-gray-400'>
-            <button className="border rounded-xl m-3 px-1 cursor-pointer" onClick={() => { CreateArray() }}
+          <div className='bg-gray-400 h-[20%]'>
+             <button className="border text-xs md:text-xl rounded-xl mx-3 my-2 px-1 cursor-pointer" onClick={() => { CreateArray() }}
           >create new array</button>
-            <button className="border rounded-xl m-3 px-1 cursor-pointer" onClick={() => { BubbleSort(bars,setBars) }}
+            <button className="border text-xs md:text-xl rounded-xl mx-3 my-2 px-1 cursor-pointer" onClick={() => { BubbleSort(bars,setBars) }}
           >Bubble Sort</button>
-            <button className="border rounded-xl m-3 px-1 cursor-pointer" onClick={() => { MergeSort(bars,setBars) }}
+            <button className="border text-xs md:text-xl rounded-xl mx-3 my-2 px-1 cursor-pointer" onClick={() => { MergeSort(bars,setBars) }}
           >Merge Sort</button>
           
-            <button className="border rounded-xl m-3 px-1 cursor-pointer" onClick={() => { InsertionSort(bars,setBars) }}
+            <button className="border text-xs md:text-xl rounded-xl mx-3 my-2 px-1 cursor-pointer" onClick={() => { InsertionSort(bars,setBars) }}
           >Insertion sort</button>
           
           </div>
-          <div className="originalcontainer flex items-end  h-[73vh]">
+          <div className="originalcontainer flex items-end  h-[80%]">
             {bars.map((height, index) => {
               return (
                 <div key={index} id={`bar-${index}`} className= 'bg-blue-500 bar mx-0.5' style={{
